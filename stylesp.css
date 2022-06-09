@@ -36,7 +36,6 @@ nav{
 }
 nav li
 {
-    float: right;
     z-index: 2;
     width: 20%;
     font-size:28px;
