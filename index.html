@@ -2,7 +2,6 @@
     <head>
         <title>Yash Kumar</title>
         <meta charset="UTF-8">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="stylesp.css" media="screen and (min-width: 501px)">
         <link rel="shortcut icon" href="https://c8.alamy.com/comp/2B07J3F/initial-yk-logo-design-vector-template-creative-letter-yk-business-logo-vector-illustration-2B07J3F.jpg">
@@ -21,24 +20,17 @@
             KUMAR</p><p id="gap1"><br></p>
             <img src="pfp.jpg" id="pfp">
             <p class="undergrad">FRESHMAN</p><p class="gap"><br></p><p class="undergrad">IIT KHARAGPUR</p>
-    </section>
+        </section>
     
-        <nav>
+        <nav class="topnav" id="myTopnav">
             <ul>
                 <a href="#about"><li>About</li></a>
-                
-                
-                    <a href="#artwork"><li>Artwork</li></a>
+                <a href="#artwork"><li>Artwork</li></a>
                     
-                    <li><button onclick="myFunction1()" id="achieve">Achievements</button></li>
-                <a href=""><div class="dropdown">
-                    <li><a href="#clubs"><button id="clubsbutton" style="text-align:right;">Club/Socs&#8595</button></a></li>
-                    <div class="dropdown-content">
-                        <a href="#cc">CodeClub</a>
-                        <a href="#swg">SWG</a>
-                        <a href="#kdag">KDAG</a>
-                        <a href="#kgts">KGTS</a>
-                    </div>
+                    <a><li>Achievements</li></a>
+                
+                    <a href="#clubs"><li id="clubsli">Club/Socs</li></a>
+                    
                 </div></li></a>
             </ul>
         </nav>
@@ -57,64 +49,58 @@
             
             
             <br>
-        I am Yash Kumar, a first year undergraduate of the Department of Computer Science and Engineering in Indian Institute of Technology, Kharagpur. I love exploring new fields and for that fact
-                I have been trying my hands on competitive programming, web development and Machine Learning as well. And while learning new things, I try keeping my interests such as playing cricket, basketball, football, sketching alive.
+            <div id="aboutcontent">
+                A PASSIONATE LEARNER. I LOVE EXPLORING NEW FIELDS AND FOR THE SAME FACT, I HAVE BEEN TRYING MY HANDS ON COMPETITIVE PROGRAMMING, WEB DEVELOPMENT AND MACHINE LEARNING AS WELL.
+                <br><br>WHEN I'M NOT LEARNING SOMETHING NEW IN THE AREA OF PROGRAMMING OR DEVELOPMENT, I'M PROBABLY WATCHING FORMULA 1 OR PLAYING SOME OR THE OTHER SPORT.
+            </div>
           </div>
-          <section id="artwork">
+        <section id="artwork">
             <p class="uhead">ARTWORK</p>
            
             <img src="canvas 1.png" id="canvas1">
             <img src="bose.png" id="bose">
             <img src="patekar.png" id="patekar">
             <img src="canvas 2.png" id="canvas2">
-            
             <img src="avanti.png" id="avanti">
             <img src="girlportrait.png" id="girlportrait"> 
-          
-          
-          </section>
+        </section>
         </main>
         <br>
         <section id="clubs">
             <p class="uhead" id="clubsp">CLUBS AND</p><p class="uhead" id="clubsp">SOCIETIES</p>
                 <br>
                 <p class="csocs" id="cc"><span class="clubsh" id="cch"><a href="https://cse.iitkgp.ac.in/~depsoc/codeclub.html">CodeClub</a></span>
-                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iure repellat consequuntur iste molestias velit provident,
-                nihil quod accusamus, nobis quidem quae doloremque.
-                Quos vero placeat quisquam voluptas, voluptates ducimus.<br>
+                <br>A SOCIETY OF CODING AFICIONADOS DEDICATED TO GARNERING CODING SKILLS AND SHAPING IIT KHARAGPUR'S FUTURE IN THE CODING ARENA.<br>
                 </p>
                 <br>
                 <hr style="width:50%;text-align:center;">
                 <br>
-                <p class="csocs" id="swg" style="color:white;"><span class="clubsh">Student Welfare Group</span><br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iure repellat consequuntur iste molestias velit provident,
-                nihil quod accusamus, nobis quidem quae doloremque.
-                Quos vero placeat quisquam voluptas, voluptates ducimus.<br>
+                <p class="csocs" id="swg" style="color:white;"><span class="clubsh">Student Welfare Group</span><br>
+                    A STUDENT BODY WHICH HELPS STUDENTS IN IMPROVING THEIR SKILLS, ATTITUDE AND RESOURCES NECESSARY TO BOTH SUCCEED IN THE COLLEGE ENVIRONMENT
+                    AS WELL AS TO PURSUE PRODUCTIVE AND SATISFYING LIVES BY ORGANIZING DIFFERENT ACTIVITIES ON THE CAMPUS.<br>
                 </p><br>
                 <hr style="width:50%;text-align:center;">
                 <br>
                 <p class="csocs" id="kdag"><span class="clubsh"><a href="https://www.kdagiitkgp.org/">Kharagpur Data Analytics Group</a></span><br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iure repellat consequuntur iste molestias velit provident,
-                nihil quod accusamus, nobis quidem quae doloremque.
-                Quos vero placeat quisquam voluptas, voluptates ducimus.<br>
+                    GROUP AIMED AT BRINGING DATA ANALYTICS AND MACHINE LEARNING ENTHUSIASTS TOGETHER UNDER THE UMBRELLA OF A SINGLE SOCIETY,
+                    AND PROVIDE AMPLE OPPURTUNITIES AND RESOURCES THAT ARE REQUIRED TO BUILD A SUCCESSFUL CAREER IN THIS EMERGING DOMAIN.<br>
                 </p><br>
                 <hr style="width:50%;text-align:center;">
                 <br>
                     <p class="csocs" id="kgts"><span class="clubsh">KGPian Game Theory Society</span><br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iure repellat consequuntur iste molestias velit provident,
-                nihil quod accusamus, nobis quidem quae doloremque.
-                Quos vero placeat quisquam voluptas, voluptates ducimus.<br></p>
+                    A KNOWLEDGE BASED SOCIETY CONDUCTING GAME THEORY BASED EVENTS AND DISCUSSIONS.<br></p>
                 <br>
                 <hr style="width:100%;text-align:left;margin-left:0;"><br>
         </section>
         
         <footer>
             <br>
-            <span id="smlinks">Contact:</span>
+            <span class="smlinks">Contact:</span>
             <a href="https://www.facebook.com/profile.php?id=100075211103014" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/yashkr_23/" class="fa fa-instagram"></a>
             <a href="https://www.linkedin.com/in/yash-kumar-53280922b/" class="fa fa-linkedin"></a>
             <span id="number">+91-7257909987</span>
+            <br><span class="smlinks">Jamshedpur, Jharkhand</span>
          </footer>
         <div id="copyright">©Yash Kumar 2022</div>
     </body>
