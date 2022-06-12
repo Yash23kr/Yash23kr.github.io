@@ -59,7 +59,7 @@ nav ul:hover{
     opacity: 1;
 }
 nav li:hover{
-    top:-2px;
+    top:-0.5px;
     position: relative;
     border-bottom: 3px solid #b7c9ca;
 }
@@ -197,17 +197,6 @@ margin-top: 0;
   padding-top: 15px;
   margin-bottom: 24px;
 }
-button{
-  width: 23%;
-  background-color: #1a3c40;
-  border: none;
-  color: #ede6db;
-  font-size: 12px;
-  font-family: 'Courier New', Courier, monospace;
-  box-sizing: border-box;
-  padding-left: 0px;
-  text-align: right;
-}
 .dropdown
 {
 display: inline-block;
@@ -324,7 +313,7 @@ html{
 }
 #bose,#patekar
 {
-  height: 30%;
+  height: 24%;
   width:34%;
   padding-left:0px;
   padding-right: 0px;
@@ -340,10 +329,9 @@ html{
 }
 #canvas1,#canvas2{
   width: 66%;
-  height: 32%;
+  height: 30%;
 }
 #canvas1{
-  
   border-left: 4px solid #1a3c40;
   border-top: 4px solid #1a3c40;
   border-top-left-radius: 36px;
@@ -353,16 +341,14 @@ html{
 }
 #girlportrait{
   width: 30%;
-  height: 30%;
+  height: 26%;
   padding-right: 1%;
   padding-top: 0;
   padding-bottom: 1%;
-  
   border-right: 4px solid #1a3c40;
   border-bottom: 4px solid #1a3c40;
   border-bottom-right-radius: 36px;
 }
-
 .smlinks{
   font-size: 18px;
   color: #ede6db;
@@ -382,4 +368,43 @@ html{
   padding: 2px;
   border: 2px solid #1a3c40;
   border-radius:100px;
+}
+.button1 {
+  border: none;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: 96%;
+  background-color: #1a3c40;
+  border: none;
+  color: #ede6db;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.button1 li {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button1 li:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.5s;
+}
+
+.button1:hover li {
+  padding-right: 2px;
+}
+
+.button1:hover li:after {
+  opacity: 1;
+  right: 0;
+}
+button{
+  padding:0px;
 }
