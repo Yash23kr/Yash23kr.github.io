@@ -9,7 +9,7 @@ nav ul
     left: 0px;
     padding: 0;
     z-index: 2;
-    padding-left: 5%; 
+    padding-left: 0%; 
     box-sizing: border-box;
     margin: 0px;
 }
@@ -17,6 +17,7 @@ nav a{
   text-decoration: none;
   color: #ede6db;
   font-family: 'Courier New', Courier, monospace;
+  padding-left: 2%;
 }
 a{
   text-decoration: none;
@@ -56,9 +57,12 @@ nav ul:hover{
     opacity: 1;
 }
 nav li:hover{
-    top:-2px;
+    top:-1px;
     position: relative;
     border-bottom: 3px solid #b7c9ca;
+}
+#avanti:hover,#canvas1:hover,#canvas2:hover,#bose:hover,#patekar:hover,#girlportrait:hover{
+  opacity: 0.9;
 }
 #bigintro
 {
@@ -72,6 +76,7 @@ nav li:hover{
     font-family:PP Neue Montreal,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;;
     line-height: 0.8em;
     padding-top: 4%;
+    
 }
 #bigintro1{
   margin-bottom:0;
@@ -157,18 +162,7 @@ line-height: 0%;
 padding-top: 100px;
 margin-top: 0;
 color: #0e2224;
-
-}
-button{
-  width: 100%;
-  background-color: #1a3c40;
-  border: none;
-  color: #ede6db;
-  font-size: 28px;
-  font-family: 'Courier New', Courier, monospace;
-  box-sizing: border-box;
-  padding-left: 0px;
-  text-align: left;
+font-family: 'Times New Roman', Times, serif;
 }
 .dropdown
 {
@@ -430,4 +424,42 @@ html{
 .aboutbox
 {
   font-size: 40px;
+}
+.button1 {
+  border: none;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  width: 96%;
+  background-color: #1a3c40;
+  border: none;
+  color: #ede6db;
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.button1 li {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button1 li:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.5s;
+}
+
+.button1:hover li {
+  padding-right: 20px;
+}
+
+.button1:hover li:after {
+  opacity: 1;
+  right: 0;
 }
