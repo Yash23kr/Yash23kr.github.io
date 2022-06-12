@@ -430,12 +430,11 @@ html{
   text-align: center;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 2px;
   width: 96%;
   background-color: #1a3c40;
   border: none;
   color: #ede6db;
-  font-size: 28px;
   font-family: 'Courier New', Courier, monospace;
   box-sizing: border-box;
   padding-left: 0px;
