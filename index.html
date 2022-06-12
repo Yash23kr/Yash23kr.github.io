@@ -8,10 +8,9 @@
         <link rel="stylesheet" href="stylesp2.css" media="screen and (max-width: 500px)">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script>
-            function myFunction1()
-            {
-                alert("This guy has no achievements!! Kindly ignore this tab.");
-            }
+            function myFunction() {
+            alert('This guy has no projects as of now. Kindly excuse.');
+        }
         </script>
     </head>
     <body>
@@ -24,14 +23,12 @@
     
         <nav class="topnav" id="myTopnav">
             <ul>
-                <a href="#about"><li>About</li></a>
-                <a href="#artwork"><li>Artwork</li></a>
-                    
-                    <a><li>Achievements</li></a>
-                
-                    <a href="#clubs"><li id="clubsli">Club/Socs</li></a>
-                    
-                </div></li></a>
+                <button class="button1">
+                <a href="#about" class="active"><li>About</li></a>
+                <a href="#artwork"><li>Artwork</li></a>    
+                <a href="" onclick="myFunction()"><li>Projects</li></a>
+                <a href="#clubss" onclick="f()"><li id="clubsli">Club/Socs</li></a>
+                </button>
             </ul>
         </nav>
         <a href="#top" id="toparrow">&uarr;</a>
@@ -44,10 +41,7 @@
                 <div class="column" id="f1p"><img src="f1.jpg"><br><span class="aboutbox">Formula 1</span><br>Lorem ipsum dolor</div>
                 <div class="column" id="coding"><img src="code.jpg"><br><span class="aboutbox">Coding</span><br>Lorem ipsum dolor</div>
                 <div class="column" id="athlete"><img src="athlete1.png"><br><span class="aboutbox">Athletics</span><br>Lorem ipsum dolor</div>
-              </div>
-            
-            
-            
+            </div>
             <br>
             <div id="aboutcontent">
                 A PASSIONATE LEARNER. I LOVE EXPLORING NEW FIELDS AND FOR THE SAME FACT, I HAVE BEEN TRYING MY HANDS ON COMPETITIVE PROGRAMMING, WEB DEVELOPMENT AND MACHINE LEARNING AS WELL.
@@ -63,10 +57,14 @@
             <img src="canvas 2.png" id="canvas2">
             <img src="avanti.png" id="avanti">
             <img src="girlportrait.png" id="girlportrait"> 
+            <p id="clubss"></p>
         </section>
         </main>
+        
         <br>
-        <section id="clubs">
+        <br><br>
+        <section id="clubs" class="clubsss">
+            
             <p class="uhead" id="clubsp">CLUBS AND</p><p class="uhead" id="clubsp">SOCIETIES</p>
                 <br>
                 <p class="csocs" id="cc"><span class="clubsh" id="cch"><a href="https://cse.iitkgp.ac.in/~depsoc/codeclub.html">CodeClub</a></span>
@@ -92,7 +90,6 @@
                 <br>
                 <hr style="width:100%;text-align:left;margin-left:0;"><br>
         </section>
-        
         <footer>
             <br>
             <span class="smlinks">Contact:</span>
