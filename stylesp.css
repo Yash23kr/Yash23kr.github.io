@@ -323,39 +323,64 @@ html{
 }
 #bose,#patekar
 {
-  height: 60%;
-  width:30%;
+  height: 66%;
+  width:40%;
 }
-
+#bose{
+  border-right: 6px solid #1a3c40;
+  border-bottom: 6px solid #1a3c40;
+  border-bottom-right-radius: 36px;
+  padding-right: 0.5%;
+  padding-bottom: 0.5%;
+}
+#patekar{
+  margin-left: 4%;
+  border-left: 6px solid #1a3c40;
+  border-top: 6px solid #1a3c40;
+  border-top-left-radius: 36px;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+}
 #avanti
 {
-  width: 48%;
-  height: 40%;
+  margin-left: 5%;
+  width: 56%;
+  height: 66%;
   padding-bottom: 0;
   padding-top: 0%;
+  border-left: 6px solid #1a3c40;
+  border-top: 6px solid #1a3c40;
+  border-top-left-radius: 36px;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
 }
 #canvas1,#canvas2{
-  width: 44%;
+  width: 43%;
   height: 66%;
 }
 #canvas1{
-  
-  border-left: 10px solid #1a3c40;
-  border-top: 10px solid #1a3c40;
+  margin-left: 1%;
+  border-left: 6px solid #1a3c40;
+  border-top: 6px solid #1a3c40;
   border-top-left-radius: 36px;
-  padding-left: 2%;
-  padding-top: 2%;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+}
+#canvas2{
+  border-right: 6px solid #1a3c40;
+  border-bottom: 6px solid #1a3c40;
+  border-bottom-right-radius: 36px;
+  padding-right: 0.5%;
+  padding-bottom: 0.5%;
 }
 #girlportrait{
-  width:20%;
-  height: 50%;
-  padding-right: 14%;
-  padding-top: 0;
-  padding-bottom: 2%;
-  
-  border-right: 10px solid #1a3c40;
-  border-bottom: 10px solid #1a3c40;
+  width:24%;
+  height: 66%;
+  border-right: 6px solid #1a3c40;
+  border-bottom: 6px solid #1a3c40;
   border-bottom-right-radius: 36px;
+  padding-right: 0.5%;
+  padding-bottom: 0.5%;
 }
 .smlinks{
   font-size: 28px;
@@ -461,4 +486,74 @@ html{
 .button1:hover li:after {
   opacity: 1;
   right: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #1a3c40;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: #ede6db;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#art{
+  display:none;
 }
