@@ -8,10 +8,11 @@
         <link rel="stylesheet" href="stylesp2.css" media="screen and (max-width: 500px)">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script>
-            function myFunction() {
-            alert('This guy has no projects as of now. Kindly excuse.');
+        function myFunction() {
+        alert('This guy has no projects as of now. Kindly excuse.');
         }
         </script>
+        
     </head>
     <body>
         <section id="bigintro">
@@ -24,7 +25,7 @@
         <nav class="topnav" id="myTopnav">
             <ul>
                 <button class="button1">
-                <a href="#about" class="active"><li>About</li></a>
+                <a href="#about"><li>About</li></a>
                 <a href="#artwork"><li>Artwork</li></a>    
                 <a href="" onclick="myFunction()"><li>Projects</li></a>
                 <a href="#clubss" onclick="f()"><li id="clubsli">Club/Socs</li></a>
@@ -49,15 +50,50 @@
             </div>
           </div>
         <section id="artwork">
+            
             <p class="uhead">ARTWORK</p>
-           
+            <div id="art">
             <img src="canvas 1.png" id="canvas1">
             <img src="bose.png" id="bose">
             <img src="patekar.png" id="patekar">
             <img src="canvas 2.png" id="canvas2">
             <img src="avanti.png" id="avanti">
             <img src="girlportrait.png" id="girlportrait"> 
-            <p id="clubss"></p>
+            </div>
+            
+            <div class="slide">
+                <div class="slideshow-container">
+        
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="canvas 1.png" id="canvas1">
+                      <img src="canvas 2.png" id="canvas2">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="avanti.png" id="avanti">
+                      <img src="girlportrait.png" id="girlportrait">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="patekar.png" id="patekar">
+                      <img src="bose.png" id="bose">
+                    </div>
+                    
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                    </div>
+                    <p id="clubss"></p>
         </section>
         </main>
         
@@ -90,6 +126,35 @@
                 <br>
                 <hr style="width:100%;text-align:left;margin-left:0;"><br>
         </section>
+        
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+        
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+        
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+        
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                }
+                </script>
         <footer>
             <br>
             <span class="smlinks">Contact:</span>
@@ -100,5 +165,7 @@
             <br><span class="smlinks">Jamshedpur, Jharkhand</span>
          </footer>
         <div id="copyright">©Yash Kumar 2022</div>
+        
+            
     </body>
 </html>
