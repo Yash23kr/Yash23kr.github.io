@@ -169,7 +169,8 @@ nav li:hover{
   font-size: 0.25em;
 }
 .aboutbox{
-  font-size: 24px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
 }
 #aboutcontent{
   padding-right: 4%;
